@@ -1,11 +1,4 @@
 site_name: "ASA: Serviços para 2º bimestre"
-site_author: Nome e Sobrenome
+site_author: Poliana de Araújo
 
-theme:
-  name: readthedocs
-
-theme:
-  name: material
-  language: pt
-
-  
+theme: readthedocs
