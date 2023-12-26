@@ -16,6 +16,6 @@ Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
    [Comando](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/comando.png)
 
 ## Teste
-[Arquivo](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/1arquivos.png)
-Demonstrações [Imagens](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/2arquivos.png)
+-Demonstração 1: [Arquivo](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/1arquivos.png)
+-Demonstração 2 [Imagens](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/2arquivos.png)
 
