@@ -53,6 +53,6 @@ Acessamos com o ip da maquina virtual e criamos um arquivo na máquina real e po
    [Comando](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/comando.png)
 
 ## Teste
--Demonstração 1: [Arquivo](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/1arquivos.png)
--Demonstração 2 [Imagens](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/2arquivos.png)
+- Demonstração 1: [Arquivo](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/1arquivos.png)
+- Demonstração 2 [Imagens](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/2arquivos.png)
 
