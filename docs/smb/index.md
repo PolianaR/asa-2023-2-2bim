@@ -13,6 +13,7 @@ Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
    
 3. Criar 4 usuários, dois para cada um dos sobrenomes;[4 usuários](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/4users.png) [4 usuários](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/4users2.png)
 4. Compartilhar duas pastas com dois de seus sobrenome, compartilhado para o grupo com o sobrenome correspondente.
+   [Comando](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/comando.png)
 
 ## Teste
 
