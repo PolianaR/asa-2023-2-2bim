@@ -25,5 +25,5 @@ Cinco registros (4 pontos cada):
 - 2 do tipo CNAME (`www` e `docs`);
 
 ## Teste
-
+[Domain](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/dominio%20no%20win7.png)
 
