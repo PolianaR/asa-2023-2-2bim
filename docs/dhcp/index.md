@@ -41,8 +41,11 @@ Arquivo onde pode ser localizado qual IP foi atribuído a qual MAC Address:
 Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
 
 - Distribuir um intervalo (*range* em inglês) de endereços IP; (15 pontos)
+- 
   [Intervalo](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/invertavlo%20dhcp.png)
+  
 - Reservar 2 endereços (IP fixo) fora do intervalo do item anterior. (5 pontos)
+- 
   [Endereços fixos](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/invertavlo%20dhcp.png)
 
 ## Teste
