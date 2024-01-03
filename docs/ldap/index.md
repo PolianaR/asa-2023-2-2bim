@@ -105,6 +105,9 @@ access to *
        by * read
 ###################################################################
 
+
+https://jualabs.com/2015/07/03/instalacao-e-autenticacao-do-ldap-no-ubuntu-12-04/
+
 Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
 
 - Criar duas OU: `vendedores` e `rh`;
