@@ -43,7 +43,11 @@ Essas etapas básicas devem ajudar a instalar o OpenLDAP no Debian. Após a inst
 
 
 ## Configuração
+
 Configuração
+
+https://blog.clusterweb.com.br/?p=178
+
 O arquivo de configuração[3] do serviço de diretório da suíte OpenLDAP (slapd) é o /etc/ldap/slapd.conf. Esse arquivo possui vários parâmetros que configuram desde a execução do serviço slapd até o backend de banco de dados que será utilizado, assim como os índices que devem ser gerados para agilizar as buscas e também a senha de administração para acessar o diretório. Ou seja, esse arquivo é a peça chave da implantação e sua configuração deve ser feita com bastante rigor. Devemos também nos certificar de que o acesso a esse arquivo estará restrito.
 
 As seguintes regras, comuns aos arquivos de configuração de sistemas Unix, são válidas para o /etc/ldap/slapd.conf:
