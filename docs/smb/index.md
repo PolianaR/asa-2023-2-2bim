@@ -47,14 +47,29 @@ Acessamos com o ip da maquina virtual e criamos um arquivo na máquina real e po
 \\192.000.0.0 -colocar o que apareceu na máquina linux.
 
 1. Criar 2 grupos para dois de seus sobrenomes;
+Abaixo temos o grupo norte e sul:
 
   ![Dois Grupos](../images/sul-norte.png)
 
-3. Criar 4 usuários, dois para cada um dos sobrenomes;![4 usuários](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/4users.png) [4 usuários](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/4users2.png)
+3. Criar 4 usuários, dois para cada um dos sobrenomes;
+
+![4 usuários](../images/4users.png) 
+
+Outros quatros usuários:
+
+[4 usuários](../images/4users2.png)
+
 4. Compartilhar duas pastas com dois de seus sobrenome, compartilhado para o grupo com o sobrenome correspondente.
-   ![Comando](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/comando.png)
+  
+  Abaixo como criar os grupos:
+
+   ![Comando](../images/comando.png)
+
 
 ## Teste
-- Demonstração 1: ![Arquivo](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/1arquivos.png)
-- Demonstração 2 ![Imagens](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/2arquivos.png)
+- Demonstração 1 de como acessar e não acessar com os usuários:
+
+ ![Arquivo](../images/2arquivos.png)
+
+- Demonstração dos usuários ![Imagens](../images/1arquivos.png)
 
