@@ -4,7 +4,7 @@
 Debian
 Instale o dhcp server com o comando:
 
-apt-get install isc-dhcp-server
+`apt-get install isc-dhcp-serve`
 
 Edite o arquivo /etc/default/isc-dhcp-server colocando a interface de rede na qual o dhcp server vai prestar o serviço alterando a linha:
 
@@ -12,8 +12,9 @@ INTERFACESV4="" para INTERFACESV4="interface" (onde a interface pode ser eth0, e
 ou INTERFACESV6="" se for IPv6
 Após editar o arquivo, salve-o e feche-o.
 
-Para o serviço funcionar corretamente edite o arquivo /etc/dhcp/dhcpd.conf ou dhcpd6.conf se for IPv6, abaixo segue um exemplo:
-```
+Para o serviço funcionar corretamente edite o arquivo `/etc/dhcp/dhcpd.conf` ou dhcpd6.conf se for IPv6, abaixo segue um exemplo:
+
+```cpp
 default-lease-time 600;
 max-lease-time 7200;
 option subnet-mask 255.255.255.0;
@@ -25,6 +26,7 @@ subnet 192.168.2.0 netmask 255.255.255.0 {
   range 192.168.2.2 192.168.2.20;
 }
 ```
+
 Após editar o arquivo, salve-o e feche-o.
 
 Inicie o serviço com o comando:
@@ -42,11 +44,11 @@ Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
 
 - Distribuir um intervalo (*range* em inglês) de endereços IP; (15 pontos)
 - 
-  ![Intervalo](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/invertavlo%20dhcp.png)
+  ![Intervalo](../images/intervalo-dhcp.png)
   
 - Reservar 2 endereços (IP fixo) fora do intervalo do item anterior. (5 pontos)
 - 
-  ![Endereços fixos](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/invertavlo%20dhcp.png)
+  ![Endereços fixos](../images/intervalo-dhcp.png)
 
 ## Teste
 service isc-dhcp-server restart
