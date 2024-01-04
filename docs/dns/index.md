@@ -22,7 +22,7 @@ Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
 Cinco registros (4 pontos cada):
 
 - 3 do tipo A (Endereços);
-- 
+[Tipo A](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/tipo%20A.png)
 - 2 do tipo CNAME (`www` e `docs`);
 [Cnames - www e docs](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/cname%20docs%20e%20www.png)
   [Cnames](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/cname%20www.png)
