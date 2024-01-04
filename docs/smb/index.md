@@ -6,7 +6,6 @@ A linha abaixo instala o Samba na versão do repositório( Version 4.5.12-Debian
 ```
 apt -y install samba krb5-config winbind smbclient
 
- ```
 Primeiro é necessário remover ou renomear o smb.conf default:
 ```
 mv /etc/samba/smb.conf /etc/samba/smb.conf.org
