@@ -166,13 +166,13 @@
 <h2 id="instalacao">Instalação</h2>
 <p>Debian
 Instale o dhcp server com o comando:</p>
-<p>apt-get install isc-dhcp-server</p>
+<p><code>apt-get install isc-dhcp-serve</code></p>
 <p>Edite o arquivo /etc/default/isc-dhcp-server colocando a interface de rede na qual o dhcp server vai prestar o serviço alterando a linha:</p>
 <p>INTERFACESV4="" para INTERFACESV4="interface" (onde a interface pode ser eth0, eth1, ...) caso seja mais que uma separe-as por espaço
 ou INTERFACESV6="" se for IPv6
 Após editar o arquivo, salve-o e feche-o.</p>
-<p>Para o serviço funcionar corretamente edite o arquivo /etc/dhcp/dhcpd.conf ou dhcpd6.conf se for IPv6, abaixo segue um exemplo:</p>
-<pre><code>default-lease-time 600;
+<p>Para o serviço funcionar corretamente edite o arquivo <code>/etc/dhcp/dhcpd.conf</code> ou dhcpd6.conf se for IPv6, abaixo segue um exemplo:</p>
+<pre><code class="cpp">default-lease-time 600;
 max-lease-time 7200;
 option subnet-mask 255.255.255.0;
 option broadcast-address 192.168.2.255;
