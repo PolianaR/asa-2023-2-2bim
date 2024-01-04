@@ -105,16 +105,6 @@
         
             <li><a class="toctree-l4" href="#nega-connect-para-outras-portas-que-nao-seja-ssl-ports">Nega CONNECT para outras portas que nao seja SSL ports</a></li>
         
-        </ul>
-    
-
-    <li class="toctree-l3"><a href="#porta-que-o-squid-vai-ouvir-squid-listen-port">porta que o squid vai ouvir / Squid listen port</a></li>
-    
-
-    <li class="toctree-l3"><a href="#permitir-apenas-computadores-da-minha-rede-only-my-network-is-allowed">Permitir apenas computadores da minha rede/ only my network is allowed</a></li>
-    
-        <ul>
-        
             <li><a class="toctree-l4" href="#teste">Teste</a></li>
         
         </ul>
@@ -181,30 +171,38 @@ sudo service squid status</p>
 <h2 id="configuracao">Configuração</h2>
 <p>Configuração do Squid
 Após a instalação, vamos iniciar a fase de configuração. Dessa forma vamos acessar o diretório  /etc/squid e em seguida vamos criar uma cópia do arquivo de configuração “squid.conf”.</p>
-<p>sudo cd /etc/squid 
+<pre><code>sudo cd /etc/squid 
 sudo cp squid.conf squid.conf.backup
-Vamos editar o arquivo “squid.conf” e vamos apagar todas as linhas desse arquivo. O motivo de estarmos apagando as linhas do arquivo, é para que o leitor possa identificar de forma segmentada cada parte da configuração.
+</code></pre>
+<p>Vamos editar o arquivo “squid.conf” e vamos apagar todas as linhas desse arquivo. O motivo de estarmos apagando as linhas do arquivo, é para que o leitor possa identificar de forma segmentada cada parte da configuração.
 sudo nano squid.conf</p>
 <p>Vamos apagar todas as linhas do arquivo. Logo depois, vamos adicionar linhas que representam ACLs de acesso.
-Posteriormente, vamos adicionar as seguintes linhas no arquivo “squid.conf”:
-acl SSL_ports port 443
+Posteriormente, vamos adicionar as seguintes linhas no arquivo “squid.conf”:</p>
+<pre><code>acl SSL_ports port 443
 acl Safe_ports port 80 # http
 acl Safe_ports port 21 # ftp
 acl Safe_ports port 443 # https
-acl CONNECT method CONNECT</p>
+acl CONNECT method CONNECT
+</code></pre>
 <h2 id="bloqueia-acesso-de-portas-nao-safe_ports">Bloqueia acesso de portas nao Safe_ports</h2>
-<p>http_access deny !Safe_ports</p>
+<pre><code>http_access deny !Safe_ports
+</code></pre>
 <h2 id="nega-connect-para-outras-portas-que-nao-seja-ssl-ports">Nega CONNECT para outras portas que nao seja SSL ports</h2>
-<p>http_access deny CONNECT !SSL_ports</p>
-<h1 id="porta-que-o-squid-vai-ouvir-squid-listen-port">porta que o squid vai ouvir / Squid listen port</h1>
-<p>http_port 3128</p>
-<h1 id="permitir-apenas-computadores-da-minha-rede-only-my-network-is-allowed">Permitir apenas computadores da minha rede/ only my network is allowed</h1>
-<p>acl Minha_Rede src 192.168.10.0/24</p>
+<pre><code>http_access deny CONNECT !SSL_ports
+
+#porta que o squid vai ouvir / Squid listen port
+http_port 3128
+
+#Permitir apenas computadores da minha rede/ only my network is allowed
+acl Minha_Rede src 192.168.10.0/24
+</code></pre>
 <p>Em seguida, vamos reiniciar o Squid para que as configurações façam efeito. Posteriormente, vamos verificar o status do Squid. Depois disso, teste a conexão do cliente com a internet.</p>
-<p>sudo service squid restart
+<pre><code>sudo service squid restart
 sudo service squid status
-Além disso, caso tenha erros, podemos verificar o syslog. Então, para isso podemos usar o comando abaixo:</p>
-<p>sudo cat /var/log/syslog | grep squid</p>
+</code></pre>
+<p>Além disso, caso tenha erros, podemos verificar o syslog. Então, para isso podemos usar o comando abaixo:</p>
+<pre><code>sudo cat /var/log/syslog | grep squid
+</code></pre>
 <p><img alt="Configurar" src="https://github.com/PolianaR/asa-2023-2-2bim/blob/main/proxy1.png" /></p>
 <p>Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.</p>
 <p>Fazer a configuração de 4 ACLs distintas, conforme a atividade passada em sala de aula.</p>
