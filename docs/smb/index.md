@@ -35,14 +35,17 @@ mkdir -p /srv/samba/rh
  ```
  nano /etc/samba/smb.conf
 
- ```
+ 
  No arquivo criamos uma rede de compartilhamento chamado rh.
  Acessamos o diretório com o seguinte comando:
- ```
- cd /srv/samba/rh
- ```
+ 
+   `cd /srv/samba/rh`
+ 
+
+
 Acessamos com o ip da maquina virtual e criamos um arquivo na máquina real e posteriormente na máquina do windows7.
 \\192.000.0.0 -colocar o que apareceu na máquina linux.
+
 1. Criar 2 grupos para dois de seus sobrenomes;
 
   ![Dois Grupos](../images/sul-norte.png)
