@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Poliana de Araújo">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>DHCP - ASA: Serviços para 2º bimestre</title>
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "DHCP";
+    var mkdocs_page_input_path = "dhcp/index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ASA: Serviços para 2º bimestre</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Serviços para o 2º bimestre</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Dhcp</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">DHCP</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#dhcp">DHCP</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#instalacao">Instalação</a></li>
+        
+            <li><a class="toctree-l4" href="#configuracao">Configuração</a></li>
+        
+            <li><a class="toctree-l4" href="#-distribuir-um-intervalo-range-em-ingles-de-enderecos-ip-15-pontos">- Distribuir um intervalo (range em inglês) de endereços IP; (15 pontos)</a></li>
+        
+            <li><a class="toctree-l4" href="#-reservar-2-enderecos-ip-fixo-fora-do-intervalo-do-item-anterior-5-pontos">- Reservar 2 endereços (IP fixo) fora do intervalo do item anterior. (5 pontos)</a></li>
+        
+            <li><a class="toctree-l4" href="#teste">Teste</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Dns</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../dns/">DNS</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Ldap</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../ldap/">LDAP</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Proxy</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../proxy/">PROXY</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Smb</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../smb/">SMB</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ASA: Serviços para 2º bimestre</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Dhcp &raquo;</li>
+        
+      
+    
+    <li>DHCP</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="dhcp">DHCP</h1>
+<h2 id="instalacao">Instalação</h2>
+<p>Debian
+Instale o dhcp server com o comando:</p>
+<p>apt-get install isc-dhcp-server</p>
+<p>Edite o arquivo /etc/default/isc-dhcp-server colocando a interface de rede na qual o dhcp server vai prestar o serviço alterando a linha:</p>
+<p>INTERFACESV4="" para INTERFACESV4="interface" (onde a interface pode ser eth0, eth1, ...) caso seja mais que uma separe-as por espaço
+ou INTERFACESV6="" se for IPv6
+Após editar o arquivo, salve-o e feche-o.</p>
+<p>Para o serviço funcionar corretamente edite o arquivo /etc/dhcp/dhcpd.conf ou dhcpd6.conf se for IPv6, abaixo segue um exemplo:</p>
+<pre><code>default-lease-time 600;
+max-lease-time 7200;
+option subnet-mask 255.255.255.0;
+option broadcast-address 192.168.2.255;
+option routers 192.168.2.254;
+option domain-name-servers 192.168.2.1, 8.8.8.8;
+
+subnet 192.168.2.0 netmask 255.255.255.0 {
+  range 192.168.2.2 192.168.2.20;
+}
+</code></pre>
+
+<p>Após editar o arquivo, salve-o e feche-o.</p>
+<p>Inicie o serviço com o comando:</p>
+<p>service isc-dhcp-server start</p>
+<p>Caso não tenha errado na sintaxe o serviço iniciará normalmente ou apresentará uma mensagem de erro.</p>
+<p>Arquivo onde pode ser localizado qual IP foi atribuído a qual MAC Address:</p>
+<p>/var/lib/dhcp/dhcpd.leases</p>
+<h2 id="configuracao">Configuração</h2>
+<p>Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.</p>
+<h2 id="-distribuir-um-intervalo-range-em-ingles-de-enderecos-ip-15-pontos">- Distribuir um intervalo (<em>range</em> em inglês) de endereços IP; (15 pontos)</h2>
+<p><img alt="Intervalo" src="https://github.com/PolianaR/asa-2023-2-2bim/blob/main/invertavlo%20dhcp.png" /></p>
+<h2 id="-reservar-2-enderecos-ip-fixo-fora-do-intervalo-do-item-anterior-5-pontos">- Reservar 2 endereços (IP fixo) fora do intervalo do item anterior. (5 pontos)</h2>
+<p><img alt="Endereços fixos" src="https://github.com/PolianaR/asa-2023-2-2bim/blob/main/invertavlo%20dhcp.png" /></p>
+<h2 id="teste">Teste</h2>
+<p>service isc-dhcp-server restart</p>
+<p><img alt="DHCP" src="https://github.com/PolianaR/asa-2023-2-2bim/blob/main/ping%20172.16.0.9.png" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../dns/" class="btn btn-neutral float-right" title="DNS">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Serviços para o 2º bimestre"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../dns/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

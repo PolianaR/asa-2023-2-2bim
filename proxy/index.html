@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Poliana de Araújo">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>PROXY - ASA: Serviços para 2º bimestre</title>
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "PROXY";
+    var mkdocs_page_input_path = "proxy/index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ASA: Serviços para 2º bimestre</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Serviços para o 2º bimestre</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Dhcp</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../dhcp/">DHCP</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Dns</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../dns/">DNS</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Ldap</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../ldap/">LDAP</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Proxy</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">PROXY</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#proxy">PROXY</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#instalacao">Instalação</a></li>
+        
+            <li><a class="toctree-l4" href="#configuracao">Configuração</a></li>
+        
+            <li><a class="toctree-l4" href="#bloqueia-acesso-de-portas-nao-safe_ports">Bloqueia acesso de portas nao Safe_ports</a></li>
+        
+            <li><a class="toctree-l4" href="#nega-connect-para-outras-portas-que-nao-seja-ssl-ports">Nega CONNECT para outras portas que nao seja SSL ports</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#porta-que-o-squid-vai-ouvir-squid-listen-port">porta que o squid vai ouvir / Squid listen port</a></li>
+    
+
+    <li class="toctree-l3"><a href="#permitir-apenas-computadores-da-minha-rede-only-my-network-is-allowed">Permitir apenas computadores da minha rede/ only my network is allowed</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#teste">Teste</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Smb</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../smb/">SMB</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ASA: Serviços para 2º bimestre</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Proxy &raquo;</li>
+        
+      
+    
+    <li>PROXY</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="proxy">PROXY</h1>
+<h2 id="instalacao">Instalação</h2>
+<p>No Linux podemos instalar o squid através do comando:</p>
+<p>sudo apt-get install squid</p>
+<p>Vamos verificar se o Squid está sendo executado de forma satisfatória. Então, vamos utilizar o seguinte comando: 
+sudo service squid status</p>
+<h2 id="configuracao">Configuração</h2>
+<p>Configuração do Squid
+Após a instalação, vamos iniciar a fase de configuração. Dessa forma vamos acessar o diretório  /etc/squid e em seguida vamos criar uma cópia do arquivo de configuração “squid.conf”.</p>
+<p>sudo cd /etc/squid 
+sudo cp squid.conf squid.conf.backup
+Vamos editar o arquivo “squid.conf” e vamos apagar todas as linhas desse arquivo. O motivo de estarmos apagando as linhas do arquivo, é para que o leitor possa identificar de forma segmentada cada parte da configuração.
+sudo nano squid.conf</p>
+<p>Vamos apagar todas as linhas do arquivo. Logo depois, vamos adicionar linhas que representam ACLs de acesso.
+Posteriormente, vamos adicionar as seguintes linhas no arquivo “squid.conf”:
+acl SSL_ports port 443
+acl Safe_ports port 80 # http
+acl Safe_ports port 21 # ftp
+acl Safe_ports port 443 # https
+acl CONNECT method CONNECT</p>
+<h2 id="bloqueia-acesso-de-portas-nao-safe_ports">Bloqueia acesso de portas nao Safe_ports</h2>
+<p>http_access deny !Safe_ports</p>
+<h2 id="nega-connect-para-outras-portas-que-nao-seja-ssl-ports">Nega CONNECT para outras portas que nao seja SSL ports</h2>
+<p>http_access deny CONNECT !SSL_ports</p>
+<h1 id="porta-que-o-squid-vai-ouvir-squid-listen-port">porta que o squid vai ouvir / Squid listen port</h1>
+<p>http_port 3128</p>
+<h1 id="permitir-apenas-computadores-da-minha-rede-only-my-network-is-allowed">Permitir apenas computadores da minha rede/ only my network is allowed</h1>
+<p>acl Minha_Rede src 192.168.10.0/24</p>
+<p>Em seguida, vamos reiniciar o Squid para que as configurações façam efeito. Posteriormente, vamos verificar o status do Squid. Depois disso, teste a conexão do cliente com a internet.</p>
+<p>sudo service squid restart
+sudo service squid status
+Além disso, caso tenha erros, podemos verificar o syslog. Então, para isso podemos usar o comando abaixo:</p>
+<p>sudo cat /var/log/syslog | grep squid</p>
+<p><img alt="Configurar" src="https://github.com/PolianaR/asa-2023-2-2bim/blob/main/proxy1.png" /></p>
+<p>Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.</p>
+<p>Fazer a configuração de 4 ACLs distintas, conforme a atividade passada em sala de aula.</p>
+<h2 id="teste">Teste</h2>
+<p><img alt="Acesso Negado" src="https://github.com/PolianaR/asa-2023-2-2bim/blob/main/acessoneg1.png" />
+<img alt="Acesso negado2" src="https://github.com/PolianaR/asa-2023-2-2bim/blob/main/negado2.png" />
+<img alt="Arquivo squid" src="https://github.com/PolianaR/asa-2023-2-2bim/blob/main/squid.conf.png" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../smb/" class="btn btn-neutral float-right" title="SMB">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../ldap/" class="btn btn-neutral" title="LDAP"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../ldap/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../smb/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

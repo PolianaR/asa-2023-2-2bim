@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Poliana de Araújo">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>SMB - ASA: Serviços para 2º bimestre</title>
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "SMB";
+    var mkdocs_page_input_path = "smb/index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ASA: Serviços para 2º bimestre</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Serviços para o 2º bimestre</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Dhcp</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../dhcp/">DHCP</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Dns</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../dns/">DNS</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Ldap</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../ldap/">LDAP</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Proxy</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../proxy/">PROXY</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Smb</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">SMB</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#smb">SMB</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#instalacao">Instalação</a></li>
+        
+            <li><a class="toctree-l4" href="#teste">Teste</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ASA: Serviços para 2º bimestre</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Smb &raquo;</li>
+        
+      
+    
+    <li>SMB</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="smb">SMB</h1>
+<h2 id="instalacao">Instalação</h2>
+<p>Instalando o Samba via Repositório
+A linha abaixo instala o Samba na versão do repositório( Version 4.5.12-Debian em 08/11/2017). Também instala algumas ferramentas básicas necessárias:</p>
+<pre><code>apt -y install samba krb5-config winbind smbclient
+
+ ```
+Primeiro é necessário remover ou renomear o smb.conf default:
+</code></pre>
+
+<p>mv /etc/samba/smb.conf /etc/samba/smb.conf.org</p>
+<pre><code>
+## Configuração
+
+Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
+Comando para provisonamento:
+</code></pre>
+
+<p>samba-tool domain provision 
+ ```
+Copiar o arquivo de configuração Kerberos gerado pelo provisionamento:</p>
+<pre><code>cp /var/lib/samba/private/krb5.conf /etc/
+
+</code></pre>
+
+<p>Para criar o diretório /srv/samba/rh</p>
+<pre><code>mkdir -p /srv/samba/rh
+
+</code></pre>
+
+<p>Após isso configurei a interface de rede na máquina linux  e posteriormente no windows7.</p>
+<p>Vamos editar o arquivo /etc/samba/smb.conf
+ ```
+ nano /etc/samba/smb.conf</p>
+<p><code>No arquivo criamos uma rede de compartilhamento chamado rh.
+ Acessamos o diretório com o seguinte comando:</code>
+ cd /srv/samba/rh
+ ```
+Acessamos com o ip da maquina virtual e criamos um arquivo na máquina real e posteriormente na máquina do windows7.
+\192.000.0.0 -colocar o que apareceu na máquina linux.
+1. Criar 2 grupos para dois de seus sobrenomes;
+   <img alt="samba 1.png" src="https://github.com/PolianaR/asa-2023-2-2bim/blob/main/samba%201.png" /></p>
+<ol>
+<li>Criar 4 usuários, dois para cada um dos sobrenomes;<img alt="4 usuários" src="https://github.com/PolianaR/asa-2023-2-2bim/blob/main/4users.png" /> <a href="https://github.com/PolianaR/asa-2023-2-2bim/blob/main/4users2.png">4 usuários</a></li>
+<li>Compartilhar duas pastas com dois de seus sobrenome, compartilhado para o grupo com o sobrenome correspondente.
+   <img alt="Comando" src="https://github.com/PolianaR/asa-2023-2-2bim/blob/main/comando.png" /></li>
+</ol>
+<h2 id="teste">Teste</h2>
+<ul>
+<li>Demonstração 1: <img alt="Arquivo" src="https://github.com/PolianaR/asa-2023-2-2bim/blob/main/1arquivos.png" /></li>
+<li>Demonstração 2 <img alt="Imagens" src="https://github.com/PolianaR/asa-2023-2-2bim/blob/main/2arquivos.png" /></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../proxy/" class="btn btn-neutral" title="PROXY"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../proxy/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

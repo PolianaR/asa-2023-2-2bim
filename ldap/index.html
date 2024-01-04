@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Poliana de Araújo">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>LDAP - ASA: Serviços para 2º bimestre</title>
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "LDAP";
+    var mkdocs_page_input_path = "ldap/index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ASA: Serviços para 2º bimestre</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Serviços para o 2º bimestre</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Dhcp</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../dhcp/">DHCP</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Dns</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../dns/">DNS</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Ldap</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">LDAP</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#ldap">LDAP</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#instalacao">Instalação</a></li>
+        
+            <li><a class="toctree-l4" href="#configuracao">Configuração</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#arquivo-de-configuracao-do-servico-slapd">Arquivo de configuração do serviço slapd.</a></li>
+    
+
+    <li class="toctree-l3"><a href="#schemas">schema's</a></li>
+    
+
+    <li class="toctree-l3"><a href="#servico">serviço</a></li>
+    
+
+    <li class="toctree-l3"><a href="#seguranca">segurança</a></li>
+    
+
+    <li class="toctree-l3"><a href="#bases-de-dados">bases de dados</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#base-de-dados-no-1">base de dados no. 1</a></li>
+        
+            <li><a class="toctree-l4" href="#acls-para-a-base-de-dados-no-1">ACL's para a base de dados no. 1</a></li>
+        
+            <li><a class="toctree-l4" href="#teste">Teste</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Proxy</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../proxy/">PROXY</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Smb</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../smb/">SMB</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ASA: Serviços para 2º bimestre</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Ldap &raquo;</li>
+        
+      
+    
+    <li>LDAP</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="ldap">LDAP</h1>
+<h2 id="instalacao">Instalação</h2>
+<p>Para instalar o OpenLDAP no Debian, você pode seguir esses passos:</p>
+<p>Atualize o índice de pacotes:</p>
+<p>bash
+Copy code
+sudo apt update
+Instale o OpenLDAP:</p>
+<p>bash
+Copy code
+sudo apt install slapd ldap-utils
+Durante a instalação, você será solicitado a definir a senha do administrador do LDAP (cn=admin,dc=example,dc=com). Defina uma senha forte para o administrador.</p>
+<p>Reconfigure o OpenLDAP:</p>
+<p>Se precisar reconfigurar o OpenLDAP após a instalação inicial, use o seguinte comando:</p>
+<p>bash
+Copy code
+sudo dpkg-reconfigure slapd
+Isso abrirá um assistente que permitirá reconfigurar o OpenLDAP.</p>
+<p>Configuração adicional:</p>
+<p>O assistente de configuração pode solicitar que você defina o domínio LDAP (por exemplo, dc=example,dc=com) e outras configurações básicas. Siga as instruções do assistente para configurar o OpenLDAP de acordo com suas necessidades.</p>
+<p>Teste a instalação:</p>
+<p>Use utilitários como ldapsearch para verificar se a instalação foi concluída com sucesso e se você pode fazer consultas ao servidor LDAP.</p>
+<p>Essas etapas básicas devem ajudar a instalar o OpenLDAP no Debian. Após a instalação, você pode configurar a estrutura do LDAP, adicionar usuários, grupos e definir políticas de acesso conforme necessário para atender aos requisitos do seu ambiente.</p>
+<h2 id="configuracao">Configuração</h2>
+<p>Configuração</p>
+<p>https://blog.clusterweb.com.br/?p=178</p>
+<p>O arquivo de configuração[3] do serviço de diretório da suíte OpenLDAP (slapd) é o /etc/ldap/slapd.conf. Esse arquivo possui vários parâmetros que configuram desde a execução do serviço slapd até o backend de banco de dados que será utilizado, assim como os índices que devem ser gerados para agilizar as buscas e também a senha de administração para acessar o diretório. Ou seja, esse arquivo é a peça chave da implantação e sua configuração deve ser feita com bastante rigor. Devemos também nos certificar de que o acesso a esse arquivo estará restrito.</p>
+<p>As seguintes regras, comuns aos arquivos de configuração de sistemas Unix, são válidas para o /etc/ldap/slapd.conf:</p>
+<p>Linhas em branco e linhas começando com # são ignoradas.</p>
+<p>Parâmetros e valores associados são separados por caracteres em branco (espaço ou tabulação).</p>
+<p>Linhas com espaços em branco na primeira coluna serão consideradas como continuação da linha anterior.</p>
+<p>Exemplo 2.1. Arquivo de configuração /etc/ldap/slapd.conf</p>
+<h6 id="etcldapslapdconf">################# /etc/ldap/slapd.conf</h6>
+<h1 id="arquivo-de-configuracao-do-servico-slapd">Arquivo de configuração do serviço slapd.</h1>
+<h1 id="schemas">schema's</h1>
+<p>include         /etc/ldap/schema/core.schema
+include         /etc/ldap/schema/cosine.schema
+include         /etc/ldap/schema/nis.schema
+include         /etc/ldap/schema/inetorgperson.schema</p>
+<p>schemacheck     on</p>
+<h1 id="servico">serviço</h1>
+<p>pidfile         /var/run/slapd/slapd.pid
+argsfile        /var/run/slapd/slapd.args</p>
+<p>loglevel        296</p>
+<p>modulepath      /usr/lib/ldap
+moduleload      back_bdb</p>
+<h1 id="seguranca">segurança</h1>
+<p>allow           bind_v2</p>
+<h1 id="bases-de-dados">bases de dados</h1>
+<p>backend         bdb
+checkpoint 512 30</p>
+<h2 id="base-de-dados-no-1">base de dados no. 1</h2>
+<p>database        bdb
+suffix          "dc=ime,dc=usp,dc=br"
+directory       "/var/lib/ldap"
+index           objectClass     eq
+rootdn          "cn=admin,dc=ime,dc=usp,dc=br"
+rootpw          {MD5}Xr4ilOzQ4PCOq3aQ0qbuaQ==
+lastmod         on
+mode            0600
+cachesize       2000</p>
+<h2 id="acls-para-a-base-de-dados-no-1">ACL's para a base de dados no. 1</h2>
+<p>access to attrs=userPassword
+       by dn.base="cn=admin,dc=ime,dc=usp,dc=br" write
+       by anonymous auth
+       by self write
+       by * none
+access to * 
+       by dn.base="cn=admin,dc=ime,dc=usp,dc=br" write
+       by * read</p>
+<h6 id="_1"></h6>
+<p>https://jualabs.com/2015/07/03/instalacao-e-autenticacao-do-ldap-no-ubuntu-12-04/</p>
+<p>Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.</p>
+<ul>
+<li>Criar duas OU: <code>vendedores</code> e <code>rh</code>;</li>
+<li>Mover o grupo <code>sobrenome1</code> e seus membros para a OU <code>vendedores</code>;</li>
+<li>Mover os grupo <code>sobrenome2</code> e seus membros para a OU <code>rh</code>.</li>
+</ul>
+<h2 id="teste">Teste</h2>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../proxy/" class="btn btn-neutral float-right" title="PROXY">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../dns/" class="btn btn-neutral" title="DNS"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../dns/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../proxy/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
