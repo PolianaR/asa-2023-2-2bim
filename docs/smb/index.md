@@ -44,9 +44,9 @@ mkdir -p /srv/samba/rh
 Acessamos com o ip da maquina virtual e criamos um arquivo na máquina real e posteriormente na máquina do windows7.
 \\192.000.0.0 -colocar o que apareceu na máquina linux.
 1. Criar 2 grupos para dois de seus sobrenomes;
-   ![samba 1.png](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/samba%201.png)
-   
-   
+
+  ![Dois Grupos](../images/sul-norte.png)
+
 3. Criar 4 usuários, dois para cada um dos sobrenomes;![4 usuários](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/4users.png) [4 usuários](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/4users2.png)
 4. Compartilhar duas pastas com dois de seus sobrenome, compartilhado para o grupo com o sobrenome correspondente.
    ![Comando](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/comando.png)
