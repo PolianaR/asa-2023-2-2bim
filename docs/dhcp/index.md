@@ -51,5 +51,4 @@ Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
 ## Teste
 service isc-dhcp-server restart
 
-
-[DHCP]!(https://github.com/PolianaR/asa-2023-2-2bim/blob/main/ping%20172.16.0.9.png)
+![DHCP](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/ping%20172.16.0.9.png)
