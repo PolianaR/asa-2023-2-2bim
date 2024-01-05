@@ -60,6 +60,23 @@ Além disso, caso tenha erros, podemos verificar o syslog. Então, para isso pod
 
 `sudo cat /var/log/syslog | grep squid`
 
+Agora e só ir no navegador e configura o proxy, por padrão:
+
+- 1.Abra o navegador.
+
+- 2.No menu, selecione Configurações ou Opções.
+
+- 3.Na seção Rede, selecione Configurações de proxy.
+
+- 4.Marque a caixa Usar um servidor proxy.
+
+- 5.Insira o endereço IP do servidor proxy e a porta.
+
+`http_access permissão NOME_DA_ACL`
+
+
+Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
+
 ![Configurar](../images/proxy1.png)
 
 
@@ -73,5 +90,5 @@ Fazer a configuração de 4 ACLs distintas, conforme a atividade passada em sala
 ![Acesso negado2](../images/negado2.png)
 
 
-![Arquivo squid](../images/squid.conf.png)
+![Arquivo squid]()
 
