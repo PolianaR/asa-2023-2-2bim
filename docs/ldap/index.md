@@ -66,7 +66,7 @@ Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
 
 - Criar duas OU: `vendedores` e `rh`;
 
-![vendedores](rh1.png)
+![vendedores](../images/rh1.png)
 
 - Mover o grupo `sobrenome1` e seus membros para a OU `vendedores`;
 
