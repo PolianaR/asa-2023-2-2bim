@@ -68,7 +68,10 @@ Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
 Fazer a configuração de 4 ACLs distintas, conforme a atividade passada em sala de aula.
 
 ## Teste
-![Acesso Negado](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/acessoneg1.png)
-![Acesso negado2](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/negado2.png)
-![Arquivo squid](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/squid.conf.png)
+![Acesso Negado](../images/acessoneg1.png)
+
+![Acesso negado2](../images/negado2.png)
+
+
+![Arquivo squid](../images/squid.conf.png)
 
