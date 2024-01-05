@@ -7,10 +7,11 @@ A linha abaixo instala o Samba na versão do repositório( Version 4.5.12-Debian
 apt -y install samba krb5-config winbind smbclient
 
 Primeiro é necessário remover ou renomear o smb.conf default:
-```
-mv /etc/samba/smb.conf /etc/samba/smb.conf.org
 
+mv /etc/samba/smb.conf /etc/samba/smb.conf.org
 ```
+
+![Instalação](../images/apt-samba.png)
 
 ## Configuração
 
@@ -19,6 +20,9 @@ Comando para provisonamento:
 ``` 
 samba-tool domain provision 
  ```
+
+ ![Samba-tool](../images/samba-tool.png)
+
 Copiar o arquivo de configuração Kerberos gerado pelo provisionamento:
 ``` 
 cp /var/lib/samba/private/krb5.conf /etc/
@@ -35,7 +39,7 @@ mkdir -p /srv/samba/rh
  ```
  nano /etc/samba/smb.conf
 
- 
+ ```
  No arquivo criamos uma rede de compartilhamento chamado rh.
  Acessamos o diretório com o seguinte comando:
  
@@ -43,9 +47,8 @@ mkdir -p /srv/samba/rh
  
 
 
-Acessamos com o ip da maquina virtual e criamos um arquivo na máquina real e posteriormente na máquina do windows7.
+Acessamos com o ip da maquina virtual e criamos um arquivo na máquina real e posteriormente na máquina do windows7. 
 \\192.000.0.0 -colocar o que apareceu na máquina linux.
-
 1. Criar 2 grupos para dois de seus sobrenomes;
 Abaixo temos o grupo norte e sul:
 
@@ -57,7 +60,7 @@ Abaixo temos o grupo norte e sul:
 
 Outros quatros usuários:
 
-[4 usuários](../images/4users2.png)
+![4 usuários](../images/4users2.png)
 
 4. Compartilhar duas pastas com dois de seus sobrenome, compartilhado para o grupo com o sobrenome correspondente.
   
