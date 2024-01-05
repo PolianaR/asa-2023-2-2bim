@@ -7,10 +7,6 @@ apt-get install samba-ad-dc krb5 smbclient
 
 ```
 
-```
-sudo apt update
-sudo apt install bind9
-```
 
 ## Configuração
 Configurando Zonas
