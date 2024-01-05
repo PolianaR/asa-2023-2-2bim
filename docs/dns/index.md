@@ -55,3 +55,4 @@ Domínio
 
 Configurando o DNS:
 
+![dns](../images/dns-2.png)
