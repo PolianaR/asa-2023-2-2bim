@@ -1,18 +1,39 @@
 # DHCP
 
 ## Instalação
-Debian
-Instale o dhcp server com o comando:
+dnsmasq
+Configuração
+1º - Arquivo de configuração do dnsmasq é:
 
-`apt-get install isc-dhcp-serve`
+/etc/dnsmasq.conf
+mas, vamos criar um arquivo (exemplo.conf) no diretório (dnsmasq.d)
 
-Edite o arquivo /etc/default/isc-dhcp-server colocando a interface de rede na qual o dhcp server vai prestar o serviço alterando a linha:
+/etc/dnsmasq.d/exemplo.conf
+todas as configurações no arquivo(exemplo.conf) vai migra para dnsmasq.conf.
 
-INTERFACESV4="" para INTERFACESV4="interface" (onde a interface pode ser eth0, eth1, ...) caso seja mais que uma separe-as por espaço
-ou INTERFACESV6="" se for IPv6
-Após editar o arquivo, salve-o e feche-o.
+2º - Editando o arquivo exemple.conf a configuração padrão é essa:
 
-Para o serviço funcionar corretamente edite o arquivo `/etc/dhcp/dhcpd.conf` ou dhcpd6.conf se for IPv6, abaixo segue um exemplo:
+Define a interface de rede que vai ser dhcp
+
+EX: interface= eht1
+Define a faixa de ip (inicial , ip final , mascara de rede , tempo que o dispositivo fica com o ip)
+
+EX: dhcp-range= 192.168.1.10, 192.168.1.254 , 255.255.255.0 , 12h
+Define o gateway da rede
+
+EX: dhcp-option= 3 , 192.168.1.254 (3: Identifica o Gateway)
+Define outro dns (Opicional)
+
+EX: dhcp-option= 6 , 8.8.8.8 (6: Identifica o servidor DNS)
+Define um domínio (Opicional)
+
+EX: dhcp-option= 15, nome-domínio (15: Especifica um domínio se caso você esteja em um)
+Informa onde será o log do serviço
+
+EX: log-facility= /var/log/dnsmasq.log
+Informa os IPs fixos
+
+EX:dhcp-host= Ip-da-máquina, Mac-da-máquina
 
 ```cpp
 default-lease-time 600;
