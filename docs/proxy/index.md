@@ -21,10 +21,12 @@ Após a instalação, vamos iniciar a fase de configuração. Dessa forma vamos 
 ```
 
 Vamos editar o arquivo “squid.conf” e vamos apagar todas as linhas desse arquivo. O motivo de estarmos apagando as linhas do arquivo, é para que o leitor possa identificar de forma segmentada cada parte da configuração.
-sudo nano squid.conf
+
+`sudo nano squid.conf`
 
 Vamos apagar todas as linhas do arquivo. Logo depois, vamos adicionar linhas que representam ACLs de acesso.
 Posteriormente, vamos adicionar as seguintes linhas no arquivo “squid.conf”:
+
 ```
     acl SSL_ports port 443
     acl Safe_ports port 80 # http
