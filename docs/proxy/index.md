@@ -39,6 +39,8 @@ Posteriormente, vamos adicionar as seguintes linhas no arquivo “squid.conf”:
 
     `http_access deny !Safe_ports`
 
+![Acesso](../images/youtub.png)
+
 ## Nega CONNECT para outras portas que nao seja SSL ports
 ```
     http_access deny CONNECT !SSL_ports
@@ -90,5 +92,5 @@ Fazer a configuração de 4 ACLs distintas, conforme a atividade passada em sala
 ![Acesso negado2](../images/negado2.png)
 
 
-![Arquivo squid]()
+![Arquivo squid](../images/youtube.png)
 
