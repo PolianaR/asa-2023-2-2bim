@@ -70,7 +70,7 @@ Outros quatros usuários:
 
 
 ## Teste
-- Demonstração 1 de como acessar e não acessar com os usuários:
+- Demonstração de como acessar e não acessar com os respectivos usuários:
 
  ![Arquivo](../images/2arquivos.png)
 
