@@ -72,7 +72,7 @@ Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
 
 - Mover os grupo `sobrenome2` e seus membros para a OU `rh`.
 
-![vendas](../images/vd-rh.png)
+![vendas](../images/rh12.png)
 
 ## Teste
 
