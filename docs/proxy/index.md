@@ -58,7 +58,8 @@ Além disso, caso tenha erros, podemos verificar o syslog. Então, para isso pod
 
 `sudo cat /var/log/syslog | grep squid`
 
-![Configurar](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/proxy1.png)
+![Configurar](../images/proxy1.png)
+
 
 Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
 
