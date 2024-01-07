@@ -61,7 +61,10 @@ O endereço IP fixo, com 10.0.2.15, a um dispositivo específico usando o dnsmas
   ![Intervalo](../images/range-intervalo.png)
   
 - Reservar 2 endereços (IP fixo) fora do intervalo do item anterior. (5 pontos)
-- 
+- acessando:
+`nano /var/dnsmasq.conf`
+colocamos o endereço fixo como podemos ver abaixo:
+
   ![Endereços fixos](../images/endereco-fixo.png)
 
 ## Teste
