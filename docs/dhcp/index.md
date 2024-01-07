@@ -71,6 +71,8 @@ colocamos o endereço fixo como podemos ver abaixo:
 
 ## Teste
 
+Verifique a configuração do dnsmasq em busca de erros ou problemas antes de iniciar o serviço, com o comando: 
+
 `dnsmasq --test`
 
 ![DHCP](../images/dnsmasq-ok.png)
@@ -78,13 +80,16 @@ colocamos o endereço fixo como podemos ver abaixo:
 É importante fazer um restart:
 
 `systemctl restart dnsmasq`
+
 e visualizar o status do dnsmasq
 
 `systemctl status dnsmasq`
 ![dnsmasqstatus](../images/status-dhcp.png)
+
 Acessando atráves de:
 `cd /var/log`
 depois usando o comando:
 `tail -f dnsmasq.log`
 mostrará o log como a imagem abaixo:
+
 ![log](../images/log--12.png)
