@@ -74,8 +74,11 @@ colocamos o endereço fixo como podemos ver abaixo:
 `dnsmasq --test`
 
 ![DHCP](../images/dnsmasq-ok.png)
+
 É importante fazer um restart:
+
 `systemctl restart dnsmasq`
+e visualizar o status do dnsmasq
 
 `systemctl status dnsmasq`
 ![dnsmasqstatus](../images/status-dhcp.png)
