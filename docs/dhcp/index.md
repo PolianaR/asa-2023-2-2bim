@@ -1,12 +1,12 @@
 # DHCP
 
 ## Instalação
--apt install dnsmasq
+`apt install dnsmasq`
 
 - Configuração
 - Arquivo de configuração do dnsmasq é:
 
-/etc/dnsmasq.conf`
+`/etc/dnsmasq.conf`
 
 
 
