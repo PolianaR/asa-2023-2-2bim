@@ -68,13 +68,13 @@ Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
 
 - Distribuir um intervalo (*range* em inglês) de endereços IP; (15 pontos)
 - 
-  ![Intervalo](../images/intervalo-dhcp.png)
+  ![Intervalo](../images/dhcp-range.png)
   
 - Reservar 2 endereços (IP fixo) fora do intervalo do item anterior. (5 pontos)
 - 
-  ![Endereços fixos](../images/intervalo-dhcp.png)
+  ![Endereços fixos](../images/dhcp-ok.png)
 
 ## Teste
 service isc-dhcp-server restart
 
-![DHCP](https://github.com/PolianaR/asa-2023-2-2bim/blob/main/ping%20172.16.0.9.png)
+![DHCP](../images/dhcp-ok.png)
