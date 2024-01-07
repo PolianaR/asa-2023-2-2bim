@@ -1,15 +1,18 @@
 # DHCP
 
 ## Instalação
-dnsmasq
-Configuração
+- dnsmasq
+
+- Configuração
 1º - Arquivo de configuração do dnsmasq é:
 
-/etc/dnsmasq.conf
-mas, vamos criar um arquivo (exemplo.conf) no diretório (dnsmasq.d)
+/etc/dnsmasq.conf`
 
-/etc/dnsmasq.d/exemplo.conf
-todas as configurações no arquivo(exemplo.conf) vai migra para dnsmasq.conf.
+
+
+`/etc/dnsmasq.d/exemplo.conf`
+
+vamos criar um arquivo (exemplo.conf) no diretório (dnsmasq.d)todas as configurações no arquivo(exemplo.conf) vai migra para dnsmasq.conf.
 
 2º - Editando o arquivo exemple.conf a configuração padrão é essa:
 
