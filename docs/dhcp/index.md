@@ -65,6 +65,7 @@ Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
 - acessando:
 `nano /var/dnsmasq.conf`
 colocamos o endereço fixo como podemos ver abaixo:
+`dhcp-host=00::11::22::33::44:55:66, 10.0.2.15`
 
   ![Endereços fixos](../images/endereco-fixo.png)
 
@@ -73,6 +74,8 @@ colocamos o endereço fixo como podemos ver abaixo:
 `dnsmasq --test`
 
 ![DHCP](../images/dnsmasq-ok.png)
+É importante fazer um restart:
+`systemctl restart dnsmasq`
 
 `systemctl status dnsmasq`
 ![dnsmasqstatus](../images/status-dhcp.png)
