@@ -65,7 +65,9 @@ Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
 - Reservar 2 endereços (IP fixo) fora do intervalo do item anterior. (5 pontos)
  Acessando:
 `nano /var/dnsmasq.conf`
+
 Colocamos o endereço fixo como podemos ver abaixo:
+
 `dhcp-host=00::11::22::33::44:55:66, 10.0.2.15`
 
   ![Endereços fixos](../images/endereco-fixo.png)
