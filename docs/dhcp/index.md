@@ -62,8 +62,9 @@ Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
   ![Intervalo](../images/range-intervalo.png)
   
 
-- Reservar 2 endereços (IP fixo) fora do intervalo do item anterior. (5 pontos)
- Acessando:
+- Reservar 2 endereços (IP fixo) fora do intervalo do item anterior. (5 pontos).
+
+ - Acessando:
 `nano /var/dnsmasq.conf`
 
 Colocamos o endereço fixo como podemos ver abaixo:
