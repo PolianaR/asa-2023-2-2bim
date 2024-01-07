@@ -72,5 +72,9 @@ O endereço IP fixo, com 10.0.2.15, a um dispositivo específico usando o dnsmas
 
 `systemctl status dnsmasq`
 ![dnsmasqstatus](../images/status-dhcp.png)
-
+Acessando atráves de:
+`cd /var/log`
+depois usando o comando:
+`tail -f dnsmasq.log`
+mostrará o log como a imagem abaixo:
 ![log](../images/log--12.png)
