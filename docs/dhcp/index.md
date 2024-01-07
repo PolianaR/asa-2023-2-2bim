@@ -56,16 +56,16 @@ Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
 
 - Distribuir um intervalo (*range* em inglês) de endereços IP; (15 pontos)
 
-- O endereço IP fixo, com 10.0.2.15, a um dispositivo específico usando o dnsmasq.
+ O endereço IP fixo, com 10.0.2.15, a um dispositivo específico usando o dnsmasq.
 
 
   ![Intervalo](../images/range-intervalo.png)
   
 
 - Reservar 2 endereços (IP fixo) fora do intervalo do item anterior. (5 pontos)
-- acessando:
+ Acessando:
 `nano /var/dnsmasq.conf`
-colocamos o endereço fixo como podemos ver abaixo:
+Colocamos o endereço fixo como podemos ver abaixo:
 `dhcp-host=00::11::22::33::44:55:66, 10.0.2.15`
 
   ![Endereços fixos](../images/endereco-fixo.png)
@@ -88,9 +88,13 @@ e visualizar o status do dnsmasq
 ![dnsmasqstatus](../images/status-dhcp.png)
 
 Acessando atráves de:
+
 `cd /var/log`
+
 depois usando o comando:
+
 `tail -f dnsmasq.log`
+
 mostrará o log como a imagem abaixo:
 
 ![log](../images/log--12.png)
