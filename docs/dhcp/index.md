@@ -55,6 +55,8 @@ Arquivo onde pode ser localizado qual IP foi atribuído a qual MAC Address:
 Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
 
 - Distribuir um intervalo (*range* em inglês) de endereços IP; (15 pontos)
+
+O endereço IP fixo, com 10.0.2.15, a um dispositivo específico usando o dnsmasq.
 - 
   ![Intervalo](../images/dhcp-range.png)
   
