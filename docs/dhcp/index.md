@@ -10,15 +10,15 @@
 
 
 
-`/etc/dnsmasq.d/exemplo.conf`
+`/etc/dnsmasq.conf`
 
-vamos criar um arquivo (exemplo.conf) no diretório (dnsmasq.d)todas as configurações no arquivo(exemplo.conf) vai migra para dnsmasq.conf.
+todas as configurações serão feitas no arquivo(dnsmasq.conf).
 
-2º - Editando o arquivo exemple.conf a configuração padrão é essa:
+2º - Editando o arquivo dnsmasq.conf a configuração padrão é essa:
 
 Define a interface de rede que vai ser dhcp
 
-EX: interface= eht1
+EX: interface= enth0
 Define a faixa de ip (inicial , ip final , mascara de rede , tempo que o dispositivo fica com o ip)
 
 EX: dhcp-range= 192.168.1.10, 192.168.1.254 , 255.255.255.0 , 12h
@@ -38,18 +38,6 @@ Informa os IPs fixos
 
 EX:dhcp-host= Ip-da-máquina, Mac-da-máquina
 
-```cpp
-default-lease-time 600;
-max-lease-time 7200;
-option subnet-mask 255.255.255.0;
-option broadcast-address 192.168.2.255;
-option routers 192.168.2.254;
-option domain-name-servers 192.168.2.1, 8.8.8.8;
-
-subnet 192.168.2.0 netmask 255.255.255.0 {
-  range 192.168.2.2 192.168.2.20;
-}
-```
 
 Após editar o arquivo, salve-o e feche-o.
 
@@ -72,9 +60,13 @@ Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
   
 - Reservar 2 endereços (IP fixo) fora do intervalo do item anterior. (5 pontos)
 - 
-  ![Endereços fixos](../images/dhcp-ok.png)
+  ![Endereços fixos](../images/dhcp.conf.png)
 
 ## Teste
-service isc-dhcp-server restart
 
-![DHCP](../images/dhcp-ok.png)
+`dnsmasq --test`
+
+![DHCP](../images/dnsmasq-ok.png)
+
+`systemctl status dnsmasq`
+![dnsmasqstatus](../images/dnsmasq-status.png)
