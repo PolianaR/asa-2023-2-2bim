@@ -60,7 +60,7 @@ Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
   
 - Reservar 2 endereços (IP fixo) fora do intervalo do item anterior. (5 pontos)
 - 
-  ![Endereços fixos](../images/dhcp.conf.png)
+  ![Endereços fixos](../images/endereco-fixo.png)
 
 ## Teste
 
