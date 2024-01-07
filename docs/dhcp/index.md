@@ -58,7 +58,7 @@ Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
 
 O endereço IP fixo, com 10.0.2.15, a um dispositivo específico usando o dnsmasq.
 - 
-  ![Intervalo](../images/dhcp-range.png)
+  ![Intervalo](../images/range-intervalo.png)
   
 - Reservar 2 endereços (IP fixo) fora do intervalo do item anterior. (5 pontos)
 - 
@@ -71,4 +71,4 @@ O endereço IP fixo, com 10.0.2.15, a um dispositivo específico usando o dnsmas
 ![DHCP](../images/dnsmasq-ok.png)
 
 `systemctl status dnsmasq`
-![dnsmasqstatus](../images/dnsmasq-status.png)
+![dnsmasqstatus](../images/status-dhcp.png)
