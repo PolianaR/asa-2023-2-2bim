@@ -1,10 +1,10 @@
 # DHCP
 
 ## Instalação
-- dnsmasq
+-apt install dnsmasq
 
 - Configuração
-1º - Arquivo de configuração do dnsmasq é:
+- Arquivo de configuração do dnsmasq é:
 
 /etc/dnsmasq.conf`
 
@@ -14,29 +14,20 @@
 
 todas as configurações serão feitas no arquivo(dnsmasq.conf).
 
-2º - Editando o arquivo dnsmasq.conf a configuração padrão é essa:
+- Editando o arquivo dnsmasq.conf a configuração padrão é essa:
 
 Define a interface de rede que vai ser dhcp
 
 EX: interface= enth0
 Define a faixa de ip (inicial , ip final , mascara de rede , tempo que o dispositivo fica com o ip)
 
-EX: dhcp-range= 192.168.1.10, 192.168.1.254 , 255.255.255.0 , 12h
+EX: dhcp-range= 10.0.2.50, 10.0.2.250 , 255.255.255.0 , 12h
 Define o gateway da rede
 
-EX: dhcp-option= 3 , 192.168.1.254 (3: Identifica o Gateway)
-Define outro dns (Opicional)
-
-EX: dhcp-option= 6 , 8.8.8.8 (6: Identifica o servidor DNS)
-Define um domínio (Opicional)
-
-EX: dhcp-option= 15, nome-domínio (15: Especifica um domínio se caso você esteja em um)
+ 
 Informa onde será o log do serviço
 
 EX: log-facility= /var/log/dnsmasq.log
-Informa os IPs fixos
-
-EX:dhcp-host= Ip-da-máquina, Mac-da-máquina
 
 
 Após editar o arquivo, salve-o e feche-o.
