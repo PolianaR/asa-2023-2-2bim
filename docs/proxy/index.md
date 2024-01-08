@@ -39,8 +39,6 @@ Posteriormente, vamos adicionar as seguintes linhas no arquivo “squid.conf”:
 
     `http_access deny !Safe_ports`
 
-![Acesso](../images/youtub.png)
-
 ## Nega CONNECT para outras portas que nao seja SSL ports
 ```
     http_access deny CONNECT !SSL_ports
